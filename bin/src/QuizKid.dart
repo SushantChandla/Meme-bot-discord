@@ -9,7 +9,7 @@ class Quizkid extends Meme {
   @override
   Future<void> imageEditinghandler(
       CommandContext context, Image img, List<String> args) async {
-    if (args.length < 2) {
+    if (args.isEmpty) {
       await context.channel.sendMessage(content: '```$helpMsg```');
       return;
     }

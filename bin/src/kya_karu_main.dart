@@ -5,12 +5,13 @@ import 'meme.dart';
 
 class KyaKaruMain extends Meme {
   KyaKaruMain()
-      : super('kyakarumain', 'meme kyakarumain arg1', 'assets/Kya-karu-main-mar-jau.jpeg');
+      : super('kyakarumain', 'meme kyakarumain arg1',
+            'assets/Kya-karu-main-mar-jau.jpeg');
 
   @override
   Future<void> imageEditinghandler(
       CommandContext context, Image img, List<String> args) async {
-    if (args.length < 2) {
+    if (args.isEmpty) {
       await context.channel.sendMessage(content: '```$helpMsg```');
       return;
     }
