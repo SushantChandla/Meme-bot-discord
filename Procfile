@@ -1,0 +1,1 @@
+worker: ./dart-sdk/bin/dart bin/meme_bot.dart

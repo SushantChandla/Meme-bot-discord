@@ -1,0 +1,20 @@
+name: meme_bot
+description: A web server built using the shelf package.
+version: 1.0.0
+# homepage: https://www.example.com
+publish_to: none
+
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+
+dependencies:
+  nyxx: ^2.0.0-rc.4
+  nyxx_commander:
+    git: 
+      url: https://github.com/SushantChandla/nyxx
+      path: nyxx_commander/
+  image: ^3.0.2
+  
+dev_dependencies:
+  build_runner:
+  build_web_compilers: 
