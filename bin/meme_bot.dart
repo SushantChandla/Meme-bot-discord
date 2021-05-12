@@ -19,7 +19,7 @@ void main() {
     return;
   }
   final bot = Nyxx(token, GatewayIntents.allUnprivileged);
-  final commander = Commander(bot, prefix: 'memet');
+  final commander = Commander(bot, prefix: 'meme');
   final memeCommander = MemeCommand(commander);
 
   memeCommander.registerCommand(BroNotCool());
