@@ -19,7 +19,7 @@ void main() {
     return;
   }
   final bot = Nyxx(token, GatewayIntents.allUnprivileged);
-  final commander = Commander(bot, prefix: 'meme');
+  final commander = Commander(bot, prefix: 'memet');
   final memeCommander = MemeCommand(commander);
 
   memeCommander.registerCommand(BroNotCool());
@@ -29,7 +29,6 @@ void main() {
   memeCommander.registerCommand(WomanCat());
   memeCommander.registerCommand(KidsCouldRead());
   memeCommander.registerCommand(KyaKaruMain());
-
 
   HelpCommand.instance.addHelpGroup(commander);
 }

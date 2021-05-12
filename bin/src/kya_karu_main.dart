@@ -15,7 +15,7 @@ class KyaKaruMain extends Meme {
       await context.channel.sendMessage(content: '```$helpMsg```');
       return;
     }
-    img = drawString(img, arial_24, 40, 30, args[0], color: 0xff000000);
+    img = drawString(img, arial_48, 40, 30, args[0], color: 0xffffffff);
 
     await context.channel.sendMessage(
         files: [AttachmentBuilder.bytes(encodePng(img), 'kyakarumai.png')]);
